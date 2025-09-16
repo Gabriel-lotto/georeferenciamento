@@ -1,0 +1,1 @@
+ /Users/SLT-003676/Documents/GitHub/georeferenciamento-mobile/.dart_tool/flutter_build/17a03970d4f46d159fd60b5fdbb06c80/native_assets.yaml: 

@@ -1,0 +1,19 @@
+# Pastas de build e arquivos gerados
+/build/
+/android/app/build/
+/ios/build/
+
+# Arquivos de dependência e logs
+pubspec.lock
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+*.log
+
+# Arquivos de IDEs
+.idea/
+.vscode/
+*.iml
+
+# Outros
+*.apk

@@ -1,0 +1,47 @@
+plugins {
+    id "com.android.application"
+    id "org.jetbrains.kotlin.android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+ android {
+   namespace = "com.example.poc_geo"
+   compileSdk = flutter.compileSdkVersion
+
+   compileOptions {
+     sourceCompatibility = JavaVersion.VERSION_1_8
+     targetCompatibility = JavaVersion.VERSION_1_8
+   }
+   kotlinOptions {
+     jvmTarget = "1.8"
+   }
+
+   defaultConfig {
+     applicationId = "com.example.poc_geo"
+     minSdk = flutter.minSdkVersion
+     targetSdk = flutter.targetSdkVersion
+
+    versionCode 1
+    versionName "1.0.0"
+   }
+
+   buildTypes {
+     release {
+       signingConfig = signingConfigs.debug
+     }
+   }
+
+   packagingOptions {
+        resources {
+            excludes += ['META-INF/com.android.tools.proguard/coroutines.pro']
+        }
+    } 
+ }
+
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+}
